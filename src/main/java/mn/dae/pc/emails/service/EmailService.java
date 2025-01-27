@@ -19,7 +19,7 @@ public class EmailService {
 
     public void send(Email email) {
         try {
-            System.out.println(email.getData().get("data"));
+            System.out.println(email.getData().get("body"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
