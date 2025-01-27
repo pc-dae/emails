@@ -19,9 +19,7 @@ public class EmailService {
 
     public void send(Email email) {
         try {
-            PrintWriter out = new PrintWriter( String.format("%s/test.html", System.getProperty("user.home")));
-            out.println(email.getData().get("data"));
-            out.close();
+            System.out.println(email.getData().get("data"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
