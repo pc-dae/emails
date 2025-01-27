@@ -1,4 +1,4 @@
-# Spring Boot + Spring data JPA + PostgreSQL Infra Example
+# Spring Boot + Spring data JPA + PostgreSQL Email Example
 
 Based on examples provided by [mkyong](https://github.com/mkyong/spring-boot)
 
