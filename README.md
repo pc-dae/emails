@@ -1,17 +1,4 @@
-# Spring Boot + Spring data JPA + PostgreSQL Email Example
-
-Based on examples provided by [mkyong](https://github.com/mkyong/spring-boot)
-
-## Technologies used:
-Technologies used:
-* Spring Boot 3.4.1
-* Spring Data JPA (Hibernate 6  is the default JPA implementation)
-* PostgreSQL 15
-* Maven
-* Java 23
-* JUnit 5
-* Docker
-* [REST Assured](https://rest-assured.io/) and [Testcontainers](https://testcontainers.com/) (for Spring integration tests using a container)
+# Spring Boot Application for POC
 
 ## Setup
 ```
@@ -20,11 +7,10 @@ cd emails
 ```
 ## Build
 ```
-./mvnw spring-boot:build-image
+./mvnw clean package
+./build.sh --version ...
 ```
 ## Deploy
 ```
-tag=0.0.1 # Increment this on each deployment
-docker tag emails:1.0 paulcarltondae/emails:$tag
-docker push  paulcarltondae/emails:$tag
+Deployed by Gitops, see https://github.com/pc-dae-gitops/paul-mba
 ```
